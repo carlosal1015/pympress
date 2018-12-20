@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Pympress v1.1.2\n"
+"Project-Id-Version: Pympress v1.2.0\n"
 "Report-Msgid-Bugs-To: me@cimba.li\n"
 "POT-Creation-Date: 2016-10-24 15:50+0200\n"
 "PO-Revision-Date: 2016-07-30 19:34+0200\n"
@@ -211,11 +211,8 @@ msgstr "Système d'exploitation non pris en charge: impossible d'activer/désact
 msgid "Usage: {} [options] <presentation_file>"
 msgstr "Usage: {} [options] <fichier de présentation>"
 
-msgid "Video support using VLC is disabled."
-msgstr "La prise en charge vidéo grâce à VLC est désactivée"
-
-msgid "Video support using VLC is enabled."
-msgstr "La prise en charge vidéo grâce à VLC est activée"
+msgid "Video support using {} is disabled."
+msgstr "La prise en charge vidéo grâce à {} est désactivée"
 
 msgid "Warning: Content and presenter window must not be on the same monitor if you start full screen!"
 msgstr "Attention: La fenêtre de contenu et de présenteur ne peuvent être sur le même écran pour démarrer en plein écran !"

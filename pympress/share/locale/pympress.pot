@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Pympress v1.1.2\n"
+"Project-Id-Version: Pympress v1.2.0\n"
 "Report-Msgid-Bugs-To: me@cimba.li\n"
 "POT-Creation-Date: 2016-10-24 15:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -206,10 +206,7 @@ msgstr ""
 msgid "Usage: {} [options] <presentation_file>"
 msgstr ""
 
-msgid "Video support using VLC is disabled."
-msgstr ""
-
-msgid "Video support using VLC is enabled."
+msgid "Video support using {} is disabled."
 msgstr ""
 
 msgid "Warning: Content and presenter window must not be on the same monitor if you start full screen!"

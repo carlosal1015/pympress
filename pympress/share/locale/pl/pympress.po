@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Pympress v1.1.2\n"
+"Project-Id-Version: Pympress v1.2.0\n"
 "Report-Msgid-Bugs-To: me@cimba.li\n"
 "POT-Creation-Date: 2016-10-24 15:50+0200\n"
 "PO-Revision-Date: 2017-04-23 15:22+0200\n"
@@ -212,11 +212,8 @@ msgstr "Nieobsługiwany system operacyjny: nie można włączyć/wyłączyć wyg
 msgid "Usage: {} [options] <presentation_file>"
 msgstr "Sposób użycia: {} [opcje] <plik_z_prezentacją>"
 
-msgid "Video support using VLC is disabled."
-msgstr "Obsługa wideo przy użyciu VLC jest wyłączona."
-
-msgid "Video support using VLC is enabled."
-msgstr "Obsługa wideo przy użyciu VLC jest włączona."
+msgid "Video support using {} is disabled."
+msgstr "Obsługa wideo przy użyciu {} jest wyłączona."
 
 msgid "Warning: Content and presenter window must not be on the same monitor if you start full screen!"
 msgstr "Ostrzeżenie: okno treści oraz okno prezentera nie mogą znajdować się na tym samym monitorze, gdy uruchomisz tryb pełnego ekranu!"

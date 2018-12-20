@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Pympress v1.1.2\n"
+"Project-Id-Version: Pympress v1.2.0\n"
 "Report-Msgid-Bugs-To: me@cimba.li\n"
 "POT-Creation-Date: 2016-10-24 15:50+0200\n"
 "PO-Revision-Date: 2018-02-10 19:34+0200\n"
@@ -211,11 +211,8 @@ msgstr "Sistema operativo no soportado: ningún salvapantallas se puede activar/
 msgid "Usage: {} [options] <presentation_file>"
 msgstr "Uso: {} [opciones] <archivo_de_presentación>."
 
-msgid "Video support using VLC is disabled."
-msgstr "El soporte de vídeo con VLC está desactivado"
-
-msgid "Video support using VLC is enabled."
-msgstr "Soporte de vídeo con VLC habilitado"
+msgid "Video support using {} is disabled."
+msgstr "El soporte de vídeo con {} está desactivado"
 
 msgid "Warning: Content and presenter window must not be on the same monitor if you start full screen!"
 msgstr "Atención: La ventana de contenido y presentación no puede estar en la misma pantalla para comenzar en pantalla completa!"
