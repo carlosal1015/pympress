@@ -89,7 +89,7 @@ class Config(configparser.ConfigParser, object): # python 2 fix
     #: `dict`-tree of presenter layouts for various modes
     layout = {}
 
-    #: Map of strings that are the valid representations of widgets from the presenter window that can be dynamically rearranged, mapping to their names
+    #: `dict` of strings that are the valid representations of widgets from the presenter window that can be dynamically rearranged, mapping to their names
     placeable_widgets = {"notes": "p_frame_notes", "current": "p_frame_cur", "next": "p_frame_next", "annotations": "p_frame_annot", "highlight": "scribble_overlay"}
 
     @staticmethod
@@ -122,6 +122,8 @@ class Config(configparser.ConfigParser, object): # python 2 fix
         config.add_section('layout')
         config.add_section('cache')
         config.add_section('scribble')
+        config.add_section('gst')
+        config.add_section('vlc')
 
         config.read(config.path_to_config())
 
@@ -176,7 +178,37 @@ class Config(configparser.ConfigParser, object): # python 2 fix
         if not config.has_option('scribble', 'width'):
             config.set('scribble', 'width', '8')
 
+        if not config.has_option('gst', 'enabled'):
+            config.set('gst', 'enabled', 'on')
+
+        if not config.has_option('gst', 'init_options'):
+            config.set('gst', 'init_options', '')
+
+        if not config.has_option('gst', 'mime_types'):
+            config.set('gst', 'mime_types', '')
+
+        if not config.has_option('vlc', 'enabled'):
+            config.set('vlc', 'enabled', 'on')
+
+        if not config.has_option('vlc', 'init_options'):
+            vlc_opts = ['--no-video-title-show'] + (['--no-xlib'] if IS_POSIX else [])
+            config.set('vlc', 'init_options', ','.join(vlc_opts))
+
+        if not config.has_option('vlc', 'mime_types'):
+            config.set('vlc', 'mime_types', '')
+
         config.load_window_layouts()
+
+
+    def getlist(self, *args):
+        """ Parse a config value and return the list by splitting the value on commas.
+
+        i.e. bar = foo,qux  returns the list ['foo', 'qux']
+
+        Returns:
+            `list`: a config value split into a list.
+        """
+        return [t.strip() for t in self.get(*args).split(',') if t.strip()]
 
 
     def save_config(self):
