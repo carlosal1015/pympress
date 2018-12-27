@@ -57,7 +57,7 @@ locale.setlocale(locale.LC_ALL, '')
 gettext.install('pympress', util.get_locale_dir())
 
 
-from pympress import media_overlay, document, ui
+from pympress import extras, document, ui
 
 
 def usage():
@@ -125,7 +125,7 @@ def main(argv = sys.argv[1:]):
             '; GLib ', '.'.join(map(str, ui.GLib.glib_version)),
             '; Poppler', document.Poppler.get_version(), document.Poppler.get_backend().value_nick,
             '; Cairo', ui.cairo.cairo_version_string(), ', pycairo', ui.cairo.version,
-            '; Media:', media_overlay.VideoOverlay.backend_version()
+            '; Media:', extras.Media.backend_version()
         ]))
 
     logger.setLevel(log_level)
